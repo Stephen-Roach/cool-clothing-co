@@ -1,3 +1,5 @@
+import './categories.styes.scss';
+
 function App() {
   const categories = [
     {
@@ -24,8 +26,8 @@ function App() {
 
   return (
     <div className='categories-container'>
-      {categories.map(({ title }) => (
-        <div className='category-container'>
+      {categories.map(({ title, id }) => (
+        <div key={id} className='category-container'>
           <div className='backround-image'></div>
           <div className='category-body-conatiner'>
             <h2>{title}</h2>
