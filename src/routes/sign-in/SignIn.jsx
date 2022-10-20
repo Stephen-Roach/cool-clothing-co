@@ -1,6 +1,8 @@
 import {
   signInWithGooglePopup,
   createUserDocumentFromAuth,
+  signInWithGoogleRedirect,
+  auth,
 } from '../../utils/firebase/firebase.utils';
 
 const SignIn = () => {
